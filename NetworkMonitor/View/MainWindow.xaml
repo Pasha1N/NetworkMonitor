@@ -1,0 +1,40 @@
+﻿<Window x:Class="NetworkMonitor.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetworkMonitor.View"
+        mc:Ignorable="d"
+        Title="Network Monitor" Height="400" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="3" Content="Start"/>
+            <Button Margin="3" Grid.Column="1" Content="Stop"/>
+            <Button Margin="3" Grid.Column="2" Content="Pause"/>
+            <Button Margin="3" Grid.Column="3" Content="Resume"/>
+
+            
+
+        </Grid>
+        <TextBlock Grid.Row="1"  VerticalAlignment="Center" Margin="3,0,0,0"> 
+                <Run FontSize="15" Text="Averae Speed: "/>
+                <Run FontSize="15"  Text="95"/>
+                <Run FontSize="15"  Text="Mb/s"/>
+        </TextBlock>
+
+
+    </Grid>
+</Window>
