@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NetworkMonitor.View"
         mc:Ignorable="d"
-        Title="Network Monitor" Height="400" Width="500">
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="Network Monitor" Height="400" Width="550">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
@@ -25,16 +26,18 @@
             <Button Margin="3" Grid.Column="1" Content="Stop"/>
             <Button Margin="3" Grid.Column="2" Content="Pause"/>
             <Button Margin="3" Grid.Column="3" Content="Resume"/>
-
-            
-
         </Grid>
-        <TextBlock Grid.Row="1"  VerticalAlignment="Center" Margin="3,0,0,0"> 
+        <TextBlock Grid.Row="1"  VerticalAlignment="Center" Margin="5,0,0,0"> 
                 <Run FontSize="15" Text="Averae Speed: "/>
                 <Run FontSize="15"  Text="95"/>
                 <Run FontSize="15"  Text="Mb/s"/>
         </TextBlock>
 
-
+        <Border Margin="3" BorderThickness="2" Grid.Row="3" BorderBrush="Blue">
+            <Canvas>
+                <Polyline Stroke="Blue" Points="{Binding Path=Points}">
+                </Polyline>
+            </Canvas>
+        </Border>
     </Grid>
 </Window>
