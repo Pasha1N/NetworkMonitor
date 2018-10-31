@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -58,6 +60,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\DelegateCommand.cs" />
     <Compile Include="Network\INetwork.cs" />
     <Compile Include="Network\NetworkMock.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
