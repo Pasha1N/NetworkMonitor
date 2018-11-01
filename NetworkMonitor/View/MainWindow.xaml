@@ -35,7 +35,7 @@
 
         <Border Margin="3" BorderThickness="2" Grid.Row="3" BorderBrush="Blue">
             <Canvas>
-                <Polyline Stroke="Blue" Points="{Binding Path=Points}">
+                <Polyline Stroke="Blue" Points="{Binding Path=Points, Mode=TwoWay}">
                 </Polyline>
             </Canvas>
         </Border>
